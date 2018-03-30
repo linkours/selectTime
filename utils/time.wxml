@@ -1,0 +1,56 @@
+<template name="sel-time">
+  <view class='selTimes' bindtap='colseTime'>
+    <view class='selTitles pubBg' catchtap='estop'>
+      <view class='upTits pubBorder'>
+        <view class='backBtnUp' bindtap='colseTime'><text>取消</text></view>
+        <view class='sureBtnUp' bindtap='sureTime'><text>确定</text></view>
+      </view>
+      <view class='timeTits'>
+        <view class='flex1'>日期</view>
+        <view class='flex1'>开始时 分</view>
+        <view class='flex1'>结束时 分</view>
+      </view>
+      <view class='timeList'>
+        <view class='flex1'>
+          <picker-view indicator-style="height: 34px;" class='pickView' bindchange="selDay">
+            <picker-view-column>
+              <view wx:for="{{days}}" wx:key="item"style='line-height:34px'>{{item}}</view>
+            </picker-view-column>
+          </picker-view>
+        </view>
+        <view class='flex1'>
+          <view class='hours'>
+            <picker-view indicator-style="height: 34px;" class='pickView' bindchange="startHour" value="{{bh}}">
+              <picker-view-column>
+                <view wx:for="{{startHours}}" wx:key="item"style='line-height:34px'>{{item}} 点</view>
+              </picker-view-column>
+            </picker-view>
+          </view>
+          <view class='minute'>
+            <picker-view indicator-style="height: 34px;" class='pickView' bindchange="startMinte" value="{{bm}}">
+              <picker-view-column>
+                <view wx:for="{{startMinute}}" wx:key="item"style='line-height:34px'>{{item}} 分</view>
+              </picker-view-column>
+            </picker-view>
+          </view>
+        </view>
+        <view class='flex1'>
+          <view class='hours'>
+            <picker-view indicator-style="height: 34px;" class='pickView' bindchange="endHour" value="{{eh}}">
+              <picker-view-column>
+                <view wx:for="{{endHour}}" wx:key="item"style='line-height:34px'>{{item}} 点</view>
+              </picker-view-column>
+            </picker-view>
+          </view>
+          <view class='minute'>
+            <picker-view indicator-style="height: 34px;" class='pickView' bindchange="endMinute" value="{{em}}">
+              <picker-view-column>
+                <view wx:for="{{endMinute}}" wx:key="item" style='line-height:34px'>{{item}} 分</view>
+              </picker-view-column>
+            </picker-view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

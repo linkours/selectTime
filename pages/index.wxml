@@ -1,0 +1,9 @@
+<import src="../utils/time.wxml"/>
+<view class="container">
+  <view class='pubInfoSty pubBg'>
+    <view class='pubRightSty'>
+      <view class='textSty timeSty' bindtap="openTimes">{{dayNow}} {{beginH}}:{{beginM}} - {{endH}}:{{endM}}</view>
+    </view>
+  </view>
+  <template is="sel-time" wx:if="{{sleTimeShow}}" data="{{days,startHours,startMinute,endHour,endMinute,bh,bm,eh,em}}"/>
+</view>

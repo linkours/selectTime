@@ -1,0 +1,84 @@
+.pubInfoSty{
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 2rpx solid darkorange;
+  text-align: center;
+  color: darkorange;
+}
+.selTimes{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,.3);
+}
+.selTitles{
+  height: 520rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.upTits{
+  height: 80rpx;
+  padding: 0 40rpx;
+  line-height: 80rpx;
+}
+.backBtnUp{
+  float: left;
+}
+.sureBtnUp{
+  float: right;
+}
+.timeTits{
+  height: 78rpx;
+  line-height: 80rpx;
+  padding: 0 40rpx;
+  display: flex;
+  font-size: 30rpx;
+  color: #aaa;
+}
+.timeList{
+  height: 360rpx;
+  padding: 0 40rpx;
+  display: flex;
+}
+.pickView{
+  height: 360rpx;
+  width: 100%;
+}
+.hours,.minute{
+  width: 50%;
+  float: left;
+  height: 360rpx;
+}
+picker-view-column view{
+  line-height: 68rpx;
+  font-size: 30rpx;
+}
+.textView{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.viewHead{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  padding: 0 40rpx;
+}
+.closeIcon{
+  float: left;
+}
+.viewAll{
+  padding: 0 40rpx 40rpx 40rpx;
+}
+.flex1{
+  flex: 1
+}
+.pubBg{
+  background: #fff;
+}
